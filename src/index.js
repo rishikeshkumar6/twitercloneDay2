@@ -3,8 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Home from './components/pages/Homepage/home';
 import SignIn from './components/pages/LoginPage/login';
 import SignUp from './components/pages/RegisterPage/register';
+import Details from './components/pages/Details/Details';
 import {createBrowserRouter,RouterProvider} from 'react-router-dom'
 
 const router = createBrowserRouter([
@@ -17,8 +19,15 @@ const router = createBrowserRouter([
   },
   {path:"/register",
     element:<SignUp/>
+  },
+  {
+    path:'/details',
+    element:<Details/>
+  },
+  {
+    path:'/home',
+    element:<Home/>
   }
-
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

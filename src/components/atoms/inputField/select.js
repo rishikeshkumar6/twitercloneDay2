@@ -4,14 +4,14 @@ import MenuItem from '@mui/material/MenuItem';
 //import ListSubheader from '@mui/material/ListSubheader';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-
 export default function GroupedSelect() {
+ 
   return (
     <div>
       <FormControl sx={{ m: 1, width: "12rem" }}>
         <InputLabel htmlFor="grouped-native-select"
         >Month</InputLabel>
-        <Select native defaultValue="" id="grouped-native-select" label="Grouping">
+        <Select native defaultValue="" id="grouped-native-select" label="Grouping" >
           <option aria-label="None" value="" />
             <option value={1}>January</option>
             <option value={2}>February</option>
@@ -30,7 +30,7 @@ export default function GroupedSelect() {
 
       <FormControl sx={{ m: 1, minWidth: 120 }}>
         <InputLabel htmlFor="grouped-select">Day</InputLabel>
-        <Select defaultValue="" id="grouped-select" label="Grouping">
+        <Select defaultValue="" id="grouped-select" label="Grouping" >
           <MenuItem value="">
             <em>None</em>
           </MenuItem>
@@ -121,6 +121,7 @@ export default function GroupedSelect() {
     </div>
   );
 }
+
 
 
 
